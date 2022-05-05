@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(),NewsItemClicked {
         recyclerView.adapter = mAdapter
     }
     private fun fetch() {
-        val url = "https://saurav.tech/NewsAPI/top-headlines/category/entertainment/in.json"
+        val url = "https://saurav.tech/NewsAPI/top-headlines/category/general/in.json"
         val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, url, null,
             {
                 val newsJsonArray = it.getJSONArray("articles")
